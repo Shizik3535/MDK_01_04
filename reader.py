@@ -19,8 +19,19 @@ class Reader:
         for book in self.books:
             print(f"- {book.title} by {book.author}")
 
+    def add_book(self, the_book):
+        self.books.append(the_book)
+
 
 if __name__ == "__main__":
     # Example usage
+    from book import Book
+
     reader1 = Reader("John", "Doe")
     reader2 = Reader("Jane", "Smith")
+
+    book1 = Book("To Kill a Mockingbird", "Harper Lee")
+    book2 = Book("1984", "George Orwell")
+
+    reader1.add_book(book1)
+    reader1.add_book(book2)
