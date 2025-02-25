@@ -21,9 +21,7 @@ int main() {
     int s;
     s = sum_arr(arr, n);
 
-    for (int i = 0; i < n; i++) {
-        printf("%s\n", arr[i]);
-    }
+    printf("%d", s);
 }
 
 
