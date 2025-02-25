@@ -12,7 +12,7 @@ int main() {
     char arr[ARR_MAX][MAX];
     int n;
 
-    scanf("%d", &n);
+    scanf("%d\n", &n);
 
     for (int i = 0; i < n; i++) {
         my_getline(arr[i], MAX);
