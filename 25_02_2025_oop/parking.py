@@ -9,7 +9,7 @@ class CarPark:
         self.cars: list[Car] = self.load_from_file()
 
     def __eq__(self, other):
-        if len(self.cars) == len(other.cars):
+        if len(self.cars) != len(other.cars):
             return False
         return True
 
